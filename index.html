@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gamified Study Planner</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body>
   <div class="container">
     <h1>Gamified Study Planner 🎮📚</h1>
     
+    <!-- Dark Mode Toggle -->
+    <button id="theme-toggle">🌙 Dark Mode</button>
+
     <!-- Task Input -->
     <div class="task-input">
       <input type="text" id="task" placeholder="Add a new task...">
@@ -22,6 +26,15 @@
       <ul id="tasks"></ul>
     </div>
 
+    <!-- Progress Bar -->
+    <div class="progress">
+      <h2>Progress</h2>
+      <div class="progress-bar">
+        <div id="progress" class="progress-fill"></div>
+      </div>
+      <span id="progress-text">0%</span>
+    </div>
+
     <!-- Points System -->
     <div class="points">
       <h2>Points: <span id="points">0</span> 🏆</h2>
@@ -31,6 +44,20 @@
     <div class="leaderboard">
       <h2>Leaderboard</h2>
       <ol id="leaderboard"></ol>
+    </div>
+
+    <!-- Pomodoro Timer -->
+    <div class="timer">
+      <h2>Study Timer</h2>
+      <div id="time">25:00</div>
+      <button id="start-timer">Start</button>
+      <button id="reset-timer">Reset</button>
+    </div>
+
+    <!-- Motivational Quote -->
+    <div class="quote">
+      <h2>Motivational Quote</h2>
+      <p id="quote-text">"The future belongs to those who believe in the beauty of their dreams."</p>
     </div>
   </div>
 
