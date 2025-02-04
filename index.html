@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamified Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gamified Study Planner 🎮📚</h1>
+    
+    <!-- Task Input -->
+    <div class="task-input">
+      <input type="text" id="task" placeholder="Add a new task...">
+      <button id="addTask">Add Task</button>
+    </div>
+
+    <!-- Task List -->
+    <div class="task-list">
+      <h2>Your Tasks</h2>
+      <ul id="tasks"></ul>
+    </div>
+
+    <!-- Points System -->
+    <div class="points">
+      <h2>Points: <span id="points">0</span> 🏆</h2>
+    </div>
+
+    <!-- Leaderboard -->
+    <div class="leaderboard">
+      <h2>Leaderboard</h2>
+      <ol id="leaderboard"></ol>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
